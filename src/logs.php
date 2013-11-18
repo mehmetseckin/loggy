@@ -19,7 +19,7 @@
  *      yourscript/logs.php?file=debug.log.gy&truncate
  */
 
-require_once 'lib/loggy.php';
+require_once 'loggy/load.php';
 if (isset($_GET["file"]))
     $loggy = new Loggy($_GET["file"]);
 else
@@ -58,9 +58,9 @@ if($type!="HTML") {
 <html>
     <head>
         <title><?php echo $loggy->getFileName() . " | Powered by Loggy"; ?></title>
-        <link rel="stylesheet" media="screen" href="dataTables/css/jquery.dataTables.css" />
-        <script type="text/javascript" src="dataTables/js/jquery.js"></script>
-        <script type="text/javascript" src="dataTables/js/jquery.dataTables.js"></script>
+        <link rel="stylesheet" media="screen" href="loggy/dataTables/css/jquery.dataTables.css" />
+        <script type="text/javascript" src="loggy/dataTables/js/jquery.js"></script>
+        <script type="text/javascript" src="loggy/dataTables/js/jquery.dataTables.js"></script>
     </head>
     <body>
         <?php
