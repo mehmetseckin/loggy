@@ -13,7 +13,7 @@ a different filename and/or a different separator, pass them as parameters.
    
   - $loggy = new Loggy($myLogFile, $mySeparator);
   
-Anywhere in your script, use the "w" method to write a new entry.
+* Anywhere in your script, use the "w" method to write a new entry.
 
   - $loggy->w("This is a dummy log message", "Written by this Tag");
   
