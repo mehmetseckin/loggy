@@ -52,7 +52,7 @@ class Loggy {
      */
     function __construct($filename = null, $separator = "|") {
         if (is_null($filename))
-            $filename = "log.gy";
+            $filename = "logs/log.gy";
         $this->filename = $filename;
 
         $this->separator = $separator;
