@@ -267,7 +267,7 @@ class Loggy {
      * Destroys the object and closes the file handle if its still active.
      */
     public function __destruct() {
-        if ($this->handle)
+        if (is_resource($this->handle))
             fclose($this->handle);
     }
 
