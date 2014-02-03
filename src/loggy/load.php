@@ -14,6 +14,13 @@ if(!is_writable(dirname(__FILE__)."/logs"))
 // Include the class definition.
 include dirname(__FILE__)."/lib/loggy.php"
 
+if(!function_exists('loggy')) {
+    function loggy($message, $tag) {
+        $loggy = new Loggy((dirname(__FILE__))."/logs/log.gy");
+        $loggy->w($message, $tag);
+    }
+}
+
 // Initialize the error and exception handlers.
 $old_error_handler = set_error_handler(function ($errno, $errstr, $errfile, $errline) {
     $loggy = new Loggy('loggy/logs/error.log.gy');
