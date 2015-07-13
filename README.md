@@ -27,7 +27,7 @@ loggy data by default.
 Export method takes a parameter that specifies what format do you want your
 data in.
   
-    - `$myHTMLLogData = $loggy->export();`
-    - `$myJSONLogData = $loggy->export("JSON");`
-    - `$myXMLLogData  = $loggy->export("XML");`
+ - `$myHTMLLogData = $loggy->export();`
+ - `$myJSONLogData = $loggy->export("JSON");`
+ - `$myXMLLogData  = $loggy->export("XML");`
 
