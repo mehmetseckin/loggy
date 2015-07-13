@@ -4,7 +4,7 @@ Loggy is a basic class responsible from logging events and errors.
 It writes down logs in a file called log.gy, and can also read the data,
 and return a formatted version for you.
 
-   Usage :
+#Usage :
 
 * Drag and drop the loggy folder, and call "loggy/load.php" from your script.
 
@@ -20,9 +20,9 @@ a different filename and/or a different separator, pass them as parameters.
 Loggy will automatically detect the IP address and pick the date and time
 information, and add them into your log entry.
   
-Exporting Loggy Entries :
+##Exporting Loggy Entries :
   
-Use the "export" method, which returns you the HTML formatted 
+Use the `export()` method, which returns you the HTML formatted 
 loggy data by default.
 Export method takes a parameter that specifies what format do you want your
 data in.
